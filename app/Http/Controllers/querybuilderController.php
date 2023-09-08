@@ -10,7 +10,7 @@ class querybuilderController extends Controller
 
     public function index(Request $request)
     {
-        $data=DB::table('stu_mrk')->where("name","=","anitha")->delete
+        $data=DB::table('stu_mrk')->delete();
         // updateorinsert([
         //     "id"=>4
         // ],
