@@ -10,7 +10,16 @@ class querybuilderController extends Controller
 
     public function index(Request $request)
     {
-        $data=DB::table('stu_mrk')->where('name','=','anakha')->exists();
+        $data=DB::table('stu_mrk')->where("name","=","anitha")->delete
+        // updateorinsert([
+        //     "id"=>4
+        // ],
+        //     ["name"=>"devi",
+        //       "age"=>27,
+        //     "marks"=>79]);
+        // distinct()->get('age');
+        // find(3);
+        // where('name','=','anakha')->exists();
         // avg('marks');
         // where('age','>',20)->where('age','>',24)->get();
         dd($data);
