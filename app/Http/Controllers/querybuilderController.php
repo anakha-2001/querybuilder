@@ -10,7 +10,8 @@ class querybuilderController extends Controller
 
     public function index(Request $request)
     {
-        $data=DB::table('stu_mrk')->where('age','>',20)->where('age','>',24)->get();
+        $data=DB::table('stu_mrk')->avg('marks');
+        // where('age','>',20)->where('age','>',24)->get();
         dd($data);
             // [
             // "name"=>"anitha",
